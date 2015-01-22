@@ -1,0 +1,14 @@
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Total</th>
+    </tr>
+    <tr ng-repeat="order in orders">
+        <td>{{order.product}}</td>
+        <td>{{order.total | currency: 'UAH '}}</td>
+    </tr>
+    <tr>
+        <td>Itogo</td>
+        <td>{{ordersTotal | currency: 'UAH '}}</td>
+    </tr>
+</table>

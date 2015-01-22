@@ -1,0 +1,12 @@
+<h1>{{customer.name}}'s orders</h1>
+<p>Filter: <input type="text" ng-model="sort.product"></p>
+<table class="table">
+	<tr>
+		<th>Order</th>
+		<th>Price</th>
+	</tr>
+	<tr ng-repeat="order in customer.orders |filter:sort">
+		<td>{{order.product}}</td>
+		<td>{{order.total}}</td>
+	</tr>	
+</table>
